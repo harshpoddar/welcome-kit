@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 54.0px; font: 36.0px '.Apple Color Emoji UI'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    p.p4 {margin: 0.0px 0.0px 6.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823; min-height: 15.0px}
+    p.p5 {margin: 0.0px 0.0px 6.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.5px; font: 15.0px 'Helvetica Neue'; color: #7c4da0; -webkit-text-stroke: #7c4da0}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 27.0px; font: 18.0px '.Apple Color Emoji UI'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.3px; font: 10.2px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.5px; font: 9.0px 'Helvetica Neue'; color: #2a2823; color: rgba(42, 40, 35, 0.6); -webkit-text-stroke: rgba(42, 40, 35, 0.6)}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.5px; font: 9.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823; background-color: #f1ecf5; background-color: rgba(241, 236, 245, 0.8)}
+    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823; background-color: #f1ecf5; background-color: rgba(241, 236, 245, 0.8); min-height: 15.0px}
+    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 22.5px; font: 15.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    p.p18 {margin: 0.0px 0.0px 6.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #7c4da0; -webkit-text-stroke: #7c4da0}
+    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Times; color: #2a2823; -webkit-text-stroke: #2a2823; min-height: 14.0px}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    li.li5 {margin: 0.0px 0.0px 6.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    li.li8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #ce5e0e}
+    li.li9 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #7c4da0; -webkit-text-stroke: #7c4da0}
+    li.li16 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #296a98}
+    li.li19 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000}
+    li.li20 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823}
+    li.li21 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823}
+    li.li22 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 27.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    li.li23 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 12.0px 'Zapf Dingbats'; font-kerning: none}
+    span.s3 {font: 12.0px '.Apple Color Emoji UI'; font-kerning: none}
+    span.s4 {font: 15.0px '.Apple Color Emoji UI'; font-kerning: none}
+    span.s5 {font-kerning: none; background-color: rgba(241, 236, 245, 0.8)}
+    span.s6 {text-decoration: underline ; font-kerning: none}
+    span.s7 {font: 12.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: rgba(241, 236, 245, 0.8)}
+    span.s8 {-webkit-text-stroke: 0px #000000}
+    span.s9 {font-kerning: none; -webkit-text-stroke: 0px #2a2823}
+    span.s10 {font-kerning: none; color: #ce5e0e}
+    span.s11 {font-kerning: none; color: #ce5e0e; -webkit-text-stroke: 0px #ce5e0e}
+    span.s12 {text-decoration: underline ; font-kerning: none; color: #7c4da0; -webkit-text-stroke: 0px #7c4da0}
+    span.s13 {font-kerning: none; color: #296a98; -webkit-text-stroke: 0px #296a98}
+    span.s14 {font-kerning: none; color: #c83637; -webkit-text-stroke: 0px #c83637}
+    span.s15 {font-kerning: none; color: #be7f24; -webkit-text-stroke: 0px #be7f24}
+    span.s16 {font-kerning: none; color: #37724e; -webkit-text-stroke: 0px #37724e}
+    span.s17 {font-kerning: none; color: #7c4da0; -webkit-text-stroke: 0px #7c4da0}
+    span.s18 {font-kerning: none; color: #2a2823; -webkit-text-stroke: 0px #2a2823}
+    span.s19 {font: 15.0px '.Apple Color Emoji UI'; font-kerning: none; color: #2a2823; -webkit-text-stroke: 0px #2a2823}
+    span.s20 {font: 12.0px 'Helvetica Neue'; text-decoration: underline ; font-kerning: none}
+    span.s21 {color: #2a2823; -webkit-text-stroke: 0px #000000}
+    span.s22 {font: 12.0px 'Helvetica Neue'; text-decoration: underline ; font-kerning: none; color: #7c4da0; -webkit-text-stroke: 0px #7c4da0}
+    span.s23 {font: 12.0px '.Apple Color Emoji UI'; text-decoration: underline ; font-kerning: none}
+    span.s24 {font: 9.0px 'Helvetica Neue'; font-kerning: none}
+    span.s25 {font-kerning: none; color: #296a98}
+    span.s26 {font: 15.0px 'Helvetica Neue'; text-decoration: underline ; font-kerning: none; color: #7c4da0; -webkit-text-stroke: 0px #7c4da0}
+    span.s27 {color: #7c4da0; -webkit-text-stroke: 0px #000000}
+    span.s28 {background-color: #fae7d5; -webkit-text-stroke: 0px #000000}
+    span.s29 {font-kerning: none; background-color: #fae7d5}
+    span.s30 {color: #37724e; -webkit-text-stroke: 0px #000000}
+    span.s31 {font: 12.0px Menlo; font-kerning: none}
+    span.s32 {font: 12.0px '.Apple Color Emoji UI'; font-kerning: none; color: #2a2823; -webkit-text-stroke: 0px #2a2823}
+    span.s33 {font: 18.0px 'Helvetica Neue'; background-color: rgba(241, 236, 245, 0.8); -webkit-text-stroke: 0px #000000}
+    span.s34 {font: 18.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: rgba(241, 236, 245, 0.8)}
+    span.s35 {font: 18.0px 'Helvetica Neue'; font-kerning: none}
+    span.s36 {font: 18.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #edeeeb}
+    span.s37 {font-kerning: none; background-color: #edeeeb}
+    span.s38 {font: 12.0px 'Lucida Grande'; font-kerning: none; color: #2a2823; -webkit-text-stroke: 0px #2a2823}
+    span.Apple-tab-span {white-space:pre}
+    ol.ol1 {list-style-type: decimal}
+    ul.ul1 {list-style-type: disc}
+    ul.ul2 {list-style-type: none}
+    ul.ul3 {list-style-type: square}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"></span></p>
+<p class="p2"><span class="s1">🎁</span></p>
+<h1 style="margin: 0.0px 0.0px 22.5px 0.0px; line-height: 36.0px; font: 30.0px 'Helvetica Neue'; color: #2a2823; -webkit-text-stroke: #2a2823"><span class="s1"><b>Ganhei um Gift Card para fazer as aulas do Mini Gênios!</b></span></h1>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Primeiro, vamos à parte mais importante. Olha aqui em baixo os detalhes de como fazer o resgate do vale-presente e fazer login no Painel do Aluno!</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">É só clicar em </span><span class="s2">➡</span><span class="s1"> para ver o conteúdo. </span><span class="s3">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"><b>Passo a passo para resgate de seu vale-presente </b></span><span class="s4">💌</span></p>
+<p class="p7"><span class="s5">⚠️</span></p>
+<p class="p1"><span class="s5">Antes de vermos o passo a passo para resgate, é importante que você saiba que poderá resgatar seu vale-presente <b>dentro do prazo vigente da negociação</b>!</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Para resgatar seu vale-presente, primeiro, acesse esse link </span><span class="s3">👇🏽</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6"><a href="https://code.byjusfutureschool.com/buy?id=3381&amp;dsp=especial&amp;utm=b2b2c">https://code.byjusfutureschool.com/buy?id=3381&amp;dsp=especial&amp;utm=b2b2c</a></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Agora, olha esse vídeo que fizemos para te mostrar como resgatar seu vale-presente:</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Resgate_Gift_Card.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50460cbc-23d9-43fb-b04e-80f870a6d3ae/Resgate_Gift_Card.mp4</a></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">Aqui em baixo tem o passo a passo que foi descrito no vídeo em forma de texto, tá bom? </span><span class="s7">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Acesse <a href="https://code.byjusfutureschool.com/buy?id=5062&amp;dsp=especial&amp;utm=b2b2c"><span class="s6">o link</span></a> de resgate;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li8"><span class="s8"></span><span class="s9">Selecione a opção </span><span class="s10"><b>Resgatar vale presente</b></span><span class="s9">;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Adicione as informações solicitadas na página, para que seu perfil seja criado em nossa plataforma;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Não é preciso inserir una </span><span class="s11"><b>Opção de Pagamento</b></span><span class="s1">, pois, no momento que você clicar em <b>Adicionar cupom</b> e colocar seu código, o valor será zerado e a opção de pagamento desaparecerá.</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Após preencher todos os dados corretamente, clique em<b> </b></span><span class="s11"><b>SEGUIR PARA ANÁLISE</b></span><span class="s1">.</span></li>
+</ol>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">Está tendo dificuldades para resgatar seu vale presente? Então, olha esse nesses tutoriais, de acordo com o navegador usado, que pode te ajudar com essa questão!</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Acessa <a href="https://support.google.com/chrome/answer/2392709?hl=pt-BR&amp;co=GENIE.Platform%3DDesktop#zippy="><span class="s12"><b>esse link</b></span></a> para ver como limpar os dados de navegação do </span><span class="s13"><b>G</b></span><span class="s14"><b>o</b></span><span class="s15"><b>o</b></span><span class="s13"><b>g</b></span><span class="s16"><b>l</b></span><span class="s14"><b>e</b></span><span class="s1"><b> </b></span><span class="s13"><b>C</b></span><span class="s14"><b>h</b></span><span class="s15"><b>r</b></span><span class="s13"><b>o</b></span><span class="s16"><b>m</b></span><span class="s14"><b>e</b></span><span class="s1">;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Acessa <a href="https://support.mozilla.org/pt-BR/kb/limpe-cookies-e-dados-de-sites-no-firefox"><span class="s12"><b>esse link</b></span></a> para ver como limpar os dados de navegação do </span><span class="s11"><b>Mozilla</b></span><span class="s1"> </span><span class="s13"><b>Fire</b></span><span class="s17"><b>fox</b></span><span class="s1">;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Acessa <a href="https://support.microsoft.com/pt-br/microsoft-edge/exibir-e-excluir-o-hist%C3%B3rico-do-navegador-no-microsoft-edge-00cf7943-a9e1-975a-a33d-ac10ce454ca4"><span class="s12"><b>esse link</b></span></a> para ver como limpar os dados de navegação do <b>Microsoft</b></span><span class="s14"><b> </b></span><span class="s13"><b>Edge</b></span><span class="s1">.</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"><b>Equipamento necessário para realização das aulas</b></span><span class="s18"><b> </b></span><span class="s19">👩🏾‍🏫</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Computador com Câmera e Microfone;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Internet com conexão de 60mb de download e 45mb de upload (recomendado)</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">Caso tenha alguma dúvida por favor entre em contato no e-mail abaixo para suporte pré-aula através do e-mail: <a href="mailto:suporte@byjusfutureschool.com"><span class="s20"><b>suporte@byjusfutureschool.com</b></span></a>.</span></p>
+<p class="p6"><span class="s1"><b>Já fez uma aula Trial ou precisa resgatar mais de um vale-presente? </b></span><span class="s19">👥</span></p>
+<p class="p5"><span class="s1">Se você precisa resgatar dois vales-presentes ou mais, fique tranquilo, é só seguir o passo a passo nesse vídeo:</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Cpia_de_Resgate_Gift_Card_janela_annima.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/051cff9a-b19c-4636-aac0-5334e6bc2fb3/Cpia_de_Resgate_Gift_Card_janela_annima.mp4</a></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">Aqui em baixo tem o passo a passo que foi descrito no vídeo em forma de texto, tá bom? </span><span class="s7">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Abra a guia anônima de seu navegador usando o atalho no teclado “Crtl + Shift + N”;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li9"><span class="s21"></span><span class="s18">Siga o procedimento que tá no <a href="https://www.notion.so/Ganhei-um-Gift-Card-para-fazer-as-aulas-do-Mini-G-nios-78836ed7e4444012ad45fee2ba5d4df4"><span class="s22"><b>Passo a passo para resgate de seu vale-presente</b></span><span class="s20"> </span><span class="s23">💌</span></a>;</span></li>
+</ol>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">Lembre-se que, para cada código resgatado e conta criada, deve-se usar um número de telefone e e-mail diferente. Esses dados são dados chaves para identificarmos as contas de nossos alunos.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"><b>Fazendo Login</b></span><span class="s18"><b> </b></span><span class="s19">💻</span></p>
+<p class="p5"><span class="s1">Fizemos um vídeo mostrando como fazer o login no Portal do Aluno!</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Ah, para acessar o Portal do Aluno é só acessar essa página </span><span class="s3">👇🏽</span></p>
+<p class="p10"><span class="s1"><a href="https://code.byjusfutureschool.com/">BYJU'S FutureSchool #1 Coding and Robotics Course for Kids</a></span></p>
+<p class="p11"><span class="s1"><a href="https://code.byjusfutureschool.com/">Live Online Coding Classes for Kids in Grade 1-12. Empower your kids with the joy of building their own apps and games. Learn from the leading tech curriculum for children.</a></span></p>
+<p class="p12"><span class="s1"><a href="https://code.byjusfutureschool.com/"><span class="s24">https://code.byjusfutureschool.com/</span></a></span></p>
+<p class="p1"><span class="s1"><a href="https://code.byjusfutureschool.com/"></a></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><b>Agora…</b></span></p>
+<p class="p5"><span class="s1">Segue o vídeo para vocês entenderem melhor. </span><span class="s3">😉</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Login.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3addda3a-3d59-47b1-b762-25798de04c0e/Login.mp4</a></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">Aqui em baixo tem o passo a passo que foi descrito no vídeo em forma de texto, tá bom? </span><span class="s7">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 15.0px 'Helvetica Neue'; color: #7c4da0; -webkit-text-stroke: #7c4da0"><span class="s1"><b>Fazendo o primeiro login</b></span></h3>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Acesse o <a href="https://code.byjusfutureschool.com/s/login"><span class="s12"><b>nosso site</b></span></a>;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Clique em </span><span class="s11"><b>Faça Login Aqui </b></span><span class="s1">na opção <b>PAI/MÃE</b>;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Na página seguinte, você poderá escolher entre fazer login utilizando o <b>número</b> <b>do</b> seu <b>celular </b>ou <b>e-mail</b> e senha.</span></li>
+</ol>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p14"><span class="s1">Na primeira vez que você for fazer login, vai ser preciso usar o celular para receber o PIN via SMS. Depois que fizer o cadastro da senha, vai ser possível fazer login com e-mail e senha.</span></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p1"><span class="s5">Ah, o celular e e-mail que devem ser usados são os que foram cadastrados por você em nosso sistema como contatos principais! </span><span class="s7">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><b>Continuando o tutorial...</b></span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Insira o <b>número do celular</b> que foi cadastrado aqui com a gente (não esquece de colocar o DDD, tá?) e seleciona a opção </span><span class="s11"><b>Enviar Código de Verificação</b></span><span class="s1">;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Você vai receber um SMS com um<b> </b>código<b> </b>PIN<b> </b>de 4 dígitos, que é o que você vai usar na tela que aparece em seguida;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1"> Depois de colocar o código, é só confirmar no botão </span><span class="s11"><b>Fazer Login</b></span><span class="s1"> e pronto, você já está no ambiente do aluno.</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 15.0px 'Helvetica Neue'; color: #7c4da0; -webkit-text-stroke: #7c4da0"><span class="s1"><b>Criando a senha para acesso com e-mail e senha</b></span></h3>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Após fazer o<b> </b>login com o PIN, localize a opção </span><span class="s13"><b>Perfil</b></span><span class="s1"> no menu no canto esquerdo da tela;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Procure pela opção </span><span class="s13"><b>Configurações</b></span><span class="s1"> e selecione </span><span class="s13"><b>Alterar senha</b></span><span class="s1">;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Informe a senha que deseja cadastrar, confirme e selecione </span><span class="s11"><b>Atualizar Senha</b></span><span class="s1">.</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p14"><span class="s1">Após isso, sempre que quiser, você poderá usar a opção </span><span class="s11"><b>FAZER LOGIN USANDO SENHA</b></span><span class="s1">! Além disso, sua senha precisa ter, no mínimo, <b>1 letra minúscula</b>,<b> 1 letra maiúscula</b>,<b> 1 número e 1 caractere especial</b>.</span></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p1"><span class="s5">Um exemplo de senha que pode ser cadastrada é: <b>Mudar@123</b>.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Agora que já aprenderam a fazer login no Portal do Aluno, vamos falar das seções e funcionalidades dele!</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Como a gente viu ali em cima, é só clicar em </span><span class="s2">➡</span><span class="s1"> para ver o conteúdo! </span><span class="s3">😉</span></p>
+<p class="p6"><span class="s1"><b>Painel;</b></span></p>
+<p class="p5"><span class="s1">Nessa seção, vocês veem um resumo de todas as outras seções. Por exemplo:</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Dados do aluno como nome e foto de perfil;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Medalhas que o aluno já conquistou e as que ainda estão para ser conquistadas;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Próxima aula, ou a opção de agendamento de aula;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Tarefas pendentes e concluídas;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">O ranking de alunos semanal;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Meta semanal para a conquista de medalhas;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Detalhes de todas as aulas disponíveis em nosso curso.</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Dá uma olhada nesse vídeo mostrando essas informações!</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Painel_do_Aluno.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/298732ed-ed5f-41c8-b136-72a6f5a7952c/Painel_do_Aluno.mp4</a></span></p>
+<p class="p6"><span class="s1"><b>Minhas Aulas e Calendário;</b></span></p>
+<p class="p5"><span class="s1">Aqui, vocês têm todas as informações sobre as aulas, como por exemplo: <b>próximas aulas</b>,<b> concluídas </b>e<b> não concluídas</b>.</span></p>
+<p class="p5"><span class="s1">Além das aulas agendadas, se houver, é possível ver as aulas a serem agendadas, em ordem crescente. </span><span class="s3">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Vem ver o vídeo com os detalhes de como fazer o agendamento e o reagendamento de aulas!</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Minhas_Aulas_e_Calendrio.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/544ac329-2883-4245-a927-81af2fcaecc0/Minhas_Aulas_e_Calendrio.mp4</a></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">Aqui em baixo tem o passo a passo que foi descrito no vídeo em forma de texto, tá bom? </span><span class="s7">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 15.0px 'Helvetica Neue'; color: #7c4da0; -webkit-text-stroke: #7c4da0"><span class="s1"><b>Agendamento</b></span></h3>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Após fazer o login no Painel do Aluno, selecione a opção </span><span class="s13"><b>Minhas Aulas e Calendário</b></span><span class="s1"> no menu do lado esquerdo;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li16"><span class="s8"></span><span class="s9">Clique em </span><span class="s25"><b>Agendar agora</b></span><span class="s9">;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Selecione o melhor horário para fazer as aulas;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Selecione a combinação de dias da semana que achar mais conveniente e confirme o agendamento.</span></li>
+</ol>
+<p class="p4"><span class="s1"></span><br></p>
+<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 15.0px 'Helvetica Neue'; color: #7c4da0; -webkit-text-stroke: #7c4da0"><span class="s1"><b>Reagendamento</b></span></h3>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Selecione os 3 pontinhos no canto direito da lição que quer reagendar;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Selecione a opção <b>Reagendar</b>;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Escolha o novo dia e/ou horário para fazer a aula;</span></li>
+</ol>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Verifique as informações de reagendamento e confirme.</span></li>
+</ol>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p17"><span class="s1"><b>Se a agenda da professora for incompatível com a sua disponibilidade para realizar as aulas, </b><a href="https://www.notion.so/Ganhei-um-Gift-Card-para-fazer-as-aulas-do-Mini-G-nios-78836ed7e4444012ad45fee2ba5d4df4"><span class="s26"><b>entre em contato com nosso suporte</b></span></a><b> para que possamos te auxiliar com essa questão.</b> </span><span class="s4">😄</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">O reagendamento deve ser feito em um dia dentro da mesma semana em que a aula seria feita originalmente e em até uma hora antes do início da aula para que não haja o desconto de um crédito de aula. Além disso, para nós, a semana considera os dias entre segunda-feira e domingo, tá?</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Além de poder reagendar uma aula você pode trocar a aula regular para uma aula de </span><span class="s17"><b>Reforço de Projetos e Conceitos</b></span><span class="s1">, que pode ser usada quando o aluno está com dificuldades para desenvolver alguma tarefa ou tiver dúvidas. Essa aula utiliza um crédito como as outras aulas.</span></p>
+<p class="p6"><span class="s1"><b>Meus Questionários;</b></span></p>
+<p class="p5"><span class="s1">Ao finalizar uma aula, ficará disponível (pode ser até 30 minutos depois, tá?) um questionário para o aluno responder que tem o intuito de ajudar na fixação do conteúdo aprendido e que também pode ser usado como um “termômetro” para entender o que o aluno conseguiu absorver desse conteúdo.</span></p>
+<p class="p5"><span class="s1">Aqui, você consegue ver os <b>questionários</b> que estão <b>pendentes</b> <b>e</b> os que foram <b>concluídos</b>!</span></p>
+<p class="p5"><span class="s1">Não esqueçam que o prazo pra finalização dos questionários é de 3 dias, ok?</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Dá uma olhada nesse vídeo mostrando como vocês podem navegar nessa seção!</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Meus_Questionrios.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a3237e29-4bd5-4cfd-9f1f-1ac7210c0a9f/Meus_Questionrios.mp4</a></span></p>
+<p class="p6"><span class="s1"><b>Meus Projetos;</b></span></p>
+<p class="p5"><span class="s1">Aqui acontece o mesmo que acontece em </span><span class="s17"><b>Meus Questionários</b></span><span class="s1">. Ao finalizar uma aula, <b>em até 30 minutos</b>, ficará disponível um projeto<b> </b>para o aluno colocar a mão na massa e praticar<b> </b>tudo o que aprendeu durante a aula.<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Vamos ver com mais detalhes o que vocês conseguem encontrar aqui?</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Meus_Projetos.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0cb2cb41-f1a7-4c79-89dc-8b66b8590c92/Meus_Projetos.mp4</a></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">Aqui em baixo tem os detalhes informados no vídeo em forma de texto, tá bom? </span><span class="s7">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<ul class="ul1">
+  <li class="li1"><span class="s27"><b></b></span><span class="s17"><b>Avaliação do Projeto</b></span><span class="s1">: mostra</span><span class="s17"><b> </b></span><span class="s1">o projeto recentemente avaliado pela professora;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s27"><b></b></span><span class="s17"><b>Projetos</b> <b>Atribuídos</b></span><span class="s1">: mostra todos os projetos que estão disponíveis para serem feitos e/ou estão em andamento.</span></li>
+</ul>
+<p class="p5"><span class="s1">Clicando em um projeto atribuído, você recebe instruções e dicas de como iniciar, produzir e enviar o projeto para avaliação da professora. Além disso, não esquece que o prazo para finalização de um projeto é 14 dias, ok?</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s27"><b></b></span><span class="s17"><b>Projetos Concluídos</b></span><span class="s1">: mostra os projetos que já passaram por todas as etapas, ou seja, o aluno fez, enviou para avaliação, a professora analisou e já deu sua resposta.</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Ah, já é possível ver logo de cara qual foi a pontuação feita com esses projetos. </span><span class="s3">😄</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p18"><span class="s1"><b>Dica!</b></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space"> </span>Clicando em </span><span class="s11"><b>Ver Todos </b></span><span class="s1">em qualquer das seções, é possível filtrar os projetos em 4 categorias, que são:</span></p>
+<ul class="ul1">
+  <li class="li19"><span class="s28"></span><span class="s29">Atribuído a mim</span><span class="s18">;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li19"><span class="s28"></span><span class="s29">Enviado</span><span class="s18">;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li19"><span class="s28"></span><span class="s29">Avaliação Recebida</span><span class="s18">;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li19"><span class="s28"></span><span class="s29">Concluído</span><span class="s18">.</span></li>
+</ul>
+<p class="p5"><span class="s1">Dá para ver, também, quantos projetos faltam para conquistar a medalha seguinte! </span><span class="s3">😉</span></p>
+<p class="p6"><span class="s1"><b>Meu Boletim;</b></span></p>
+<p class="p5"><span class="s1">Nessa seção vocês encontram a avaliação fornecida pela plataforma e pela professora sobre o desenvolvimento do aluno<span class="Apple-converted-space">  </span>no curso. Boletins avaliativos serão disponibilizados após a quarta aula e, depois, após cada 8~10 aulas completadas.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Como é uma avaliação de várias aulas, há muitas informações disponibilizadas, como:</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Criatividade para a resolução de problemas;<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Pensamento lógico;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Concentração durante a aula;<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Proficiência em programação, entre outros.</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Vejam o vídeo abaixo mostrando mais detalhes sobre o boletim!</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Meu_Boletim.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e7cfce94-78ac-426e-b870-c20460ec9d51/Meu_Boletim.mp4</a></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p14"><span class="s1">Para que vocês possam entender melhor cada avaliação feita, após a liberação de cada boletim, acontecerá uma sessão chamada <b>Sob os Holofotes </b>(que vai durar por volta de 15 minutinhos) que tem como propósito a explicação da professora, com detalhes, sobre os dados do boletim e desenvolvimento do aluno.</span></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p1"><span class="s5">Também é possível compartilhar os boletins com amigos e familiares para que eles possam comemorar as conquistas do aluno junto com ele! </span><span class="s7">😉</span></p>
+<p class="p6"><span class="s1"><b>Revisão;</b></span></p>
+<p class="p5"><span class="s1">A Revisão compreende aulas e projetos estrategicamente posicionadas ao longo do curso, sem precisar de aulas extras, que ajudam os alunos a <b>rever conceitos já aprendidos</b>,<b> relembrar conceitos chave </b>e usar tudo isso combinado para<b> construir aplicativos</b> <b>e jogos</b> incríveis e inovadores.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Nessa seção, vocês verão apenas a explicação do porque as aulas e atividades de revisão são importantes no aprendizado, pois trabalham conceitos como o exercício das <b>memórias de curto e longo prazo </b>além de aliar criatividade e lógica.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Esse vídeo está mostrando tudo o que vocês podem checar aqui!</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Reviso.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ac64588-14f0-4c4c-ac39-2a0bda3328a0/Reviso.mp4</a></span></p>
+<p class="p6"><span class="s1"><b>Seu Conselheiro Acadêmico;</b></span></p>
+<p class="p5"><span class="s1">Surgiu alguma dúvida? Fiquem tranquilos que aqui vocês vão encontrar todas as opções disponíveis para entrar em contato com nossos analistas incríveis sempre que precisar!</span></p>
+<p class="p5"><span class="s1">Nossos canais de atendimento são:</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s3">📞</span><span class="s1">Telefone <b>(11) 3042-1210</b>;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s30"></span><span class="s16">WhatsApp </span><span class="s1"><b>(11) 93773-2468</b>;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s31">✉</span><span class="s1"> E-mail. É só selecionar <b>Escreva para nós </b>e enviar sua mensagem ou enviar sua mensagem diretamente para o endereço: suporte@byjusfutureschool.com;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s3">💬</span><span class="s1"> Chat. Ah, esse é o meio mais sugerido para entrar em contato conosco, pois costuma ser mais rápido. </span><span class="s3">😉</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Olha esse vídeo mostrando com mais detalhes como vocês podem entrar em contato conosco!</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Seu_Conselheiro_Acadmico.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2e197c29-6b1d-44dc-89ca-2ef5ca9a0170/Seu_Conselheiro_Acadmico.mp4</a></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Como informado no vídeo, há uma mensagem pedindo que o download do </span><span class="s11"><b>AnyDesk </b></span><span class="s1">seja feito.</span></p>
+<p class="p5"><span class="s1">Além do download através do Painel do Aluno, também é possível fazer o download através <a href="https://anydesk.com/pt/downloads/windows"><span class="s12"><b>desse link</b></span></a> pois essa é uma ferramenta importante para ajudá-los quando tiverem alguma dificuldade técnica que requeira a intervenção de nossos analistas!</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">Apenas lembrando, nosso horário de atendimento é de segunda-feira a sábado das 10:00h às 19:00h!</span></p>
+<p class="p6"><span class="s1"><b>Perfil;</b></span></p>
+<p class="p5"><span class="s1">No perfil, temos informações sobre o aluno e seu responsável. Também é possível colocar uma foto do aluno, por exemplo, para deixar bem personalizado.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Vamos ver o que vocês encontram aqui com a ajuda desse vídeo!</span></p>
+<p class="p1"><span class="s6"><a href="https://harshpoddar.github.io/welcome-kit/Perfil.mp4">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea3a4c58-3bfe-4d74-a4fc-113b97a1a888/Perfil.mp4</a></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p1"><span class="s5">Aqui em baixo tem os detalhes informados no vídeo em forma de texto, tá bom? </span><span class="s7">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<ul class="ul1">
+  <li class="li1"><span class="s27"><b></b></span><span class="s17"><b>Informações pessoais</b></span><span class="s1">: onde dados como número de telefone adicional, data de nascimento e endereço podem ser modificados;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s27"><b></b></span><span class="s17"><b>Configurações de Notificação</b></span><span class="s1">: onde vocês podem escolher os meios utilizados para entrarmos em contato quando preciso, e que tipo de comunicação será recebida;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s27"><b></b></span><span class="s17"><b>Preferências</b></span><span class="s1">: onde vocês podem informar se quer uma professora substituta quando necessário e se a professora titular pode agendar aulas em seu nome;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s27"><b></b></span><span class="s17"><b>Configurações</b></span><span class="s1">: onde vocês podem alterar a senha de acesso ao Portal do Aluno ou cancelar a inscrição de notificações;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s27"><b></b></span><span class="s17"><b>Seus pedidos</b></span><span class="s1">: onde vocês podem ver os pagamentos realizados;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s27"><b></b></span><span class="s17"><b>Curso</b></span><span class="s1">: onde vocês podem ver os detalhes do(s) curso(s) no(s) qual(ais) o aluno está matriculado.</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p14"><span class="s1">Pedimos que deixe essas informações sempre atualizadas, tá bom?</span></p>
+<p class="p15"><span class="s1"></span><br></p>
+<p class="p1"><span class="s5">As informações que não podem ser editadas por você podem ser modificadas com a ajuda de nossos analistas.</span></p>
+<p class="p6"><span class="s1"><b>Política de Privacidade.</b></span></p>
+<p class="p5"><span class="s1">Selecionando essa opção, vocês são redirecionados para um documento que vai ter <b>informações sobre</b> tudo da <b>nossa plataforma</b>, <b>o que fazemos com os dados que são fornecidos por vocês</b>, a <b>gestão de dados feita por outras plataformas parceiras</b> e <b>seus direitos enquanto nossos clientes</b>, entre outras coisas.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Se quiser, é só clicar </span><span class="s3">👉🏽<a href="https://code.byjusfutureschool.com/privacy-policy"><span class="s22"><b>aqui</b></span></a></span><span class="s1"> que você vai ter acesso a ela, também! </span><span class="s3">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Além de todas essas informações, tem essa aqui que também é bem importante com relação ao desenvolvimento do aluno durante o curso. Dá uma olhadinha!</span></p>
+<p class="p6"><span class="s1"><b>Agende uma conversa com nossa Orientação Educacional.</b></span></p>
+<p class="p5"><span class="s1">A Orientação Educacional é mais um diferencial ofertado às famílias da BYJU'S que tem como objetivo proporcionar a melhor experiência de aprendizagem possível aos nossos usuários (estudantes e seus familiares).</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Desde sua chegada à BYJU'S FutureSchool, buscamos a acolhida e a oportunidade de aprofundar a interação e apoio na experiência do aluno, oferecendo um <b>direcionamento em seu processo de ensino-aprendizagem, acompanhando seus indicadores de desempenho no percurso do curso e realizando as intervenções necessárias</b>.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">💡</span></p>
+<p class="p14"><span class="s1"><b>Vocês desejam ter um acompanhamento da Orientação Educacional?</b></span></p>
+<p class="p1"><span class="s5">Realize o agendamento através do nosso suporte que um de nossos orientadores educacionais irá entrar em contato no dia e horário combinados.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">O contato telefônico realizado por nossos Orientadores Educacionais é seguido por outros momentos de contato que acompanham a evolução do estudante em pontos da trajetória do aluno. A família será informada sobre as formas de contato com a Orientação Educacional ao longo do percurso.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Aguardamos seu agendamento!</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p7"><span class="s5">❗</span></p>
+<p class="p1"><span class="s5">Ops! Tiveram alguma dificuldade para acessar o Painel do aluno, entrar em uma aula ou fazer alguma atividade? Olha algumas dicas para ajudá-los com isso!</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">A primeira coisa a se fazer é tentar trocar de navegador.<span class="Apple-converted-space"> </span></span></li>
+</ol>
+<p class="p5"><span class="s1">Recomendamos o uso do </span><span class="s13"><b>G</b></span><span class="s14"><b>o</b></span><span class="s15"><b>o</b></span><span class="s13"><b>g</b></span><span class="s16"><b>l</b></span><span class="s14"><b>e</b></span><span class="s1"><b> </b></span><span class="s13"><b>C</b></span><span class="s14"><b>h</b></span><span class="s15"><b>r</b></span><span class="s13"><b>o</b></span><span class="s16"><b>m</b></span><span class="s14"><b>e</b></span><span class="s1">, </span><span class="s11"><b>Mozilla</b></span><span class="s1"> </span><span class="s13"><b>Fire</b></span><span class="s17"><b>fox </b></span><span class="s1">e</span><span class="s14"><b> </b></span><span class="s1"><b>Microsoft</b></span><span class="s14"><b> </b></span><span class="s13"><b>Edge</b></span><span class="s1">, mas não deixa os outros saberem que recomendamos, sobre tudo, o </span><span class="s13"><b>G</b></span><span class="s14"><b>o</b></span><span class="s15"><b>o</b></span><span class="s13"><b>g</b></span><span class="s16"><b>l</b></span><span class="s14"><b>e</b></span><span class="s1"><b> </b></span><span class="s13"><b>C</b></span><span class="s14"><b>h</b></span><span class="s15"><b>r</b></span><span class="s13"><b>o</b></span><span class="s16"><b>m</b></span><span class="s14"><b>e</b></span><span class="s1">, pois ele é o que “conversa” melhor com o nosso sistema, tá bom? </span><span class="s3">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Se isso não for o suficiente, sugerimos que limpe os dados de navegação do navegador que está usando. Não sabe como limpar os dados de navegação? Vamos te ajudar com isso!</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Acessa <a href="https://support.google.com/chrome/answer/2392709?hl=pt-BR&amp;co=GENIE.Platform%3DDesktop#zippy="><span class="s12"><b>esse link</b></span></a> para ver como limpar os dados de navegação do </span><span class="s13"><b>G</b></span><span class="s14"><b>o</b></span><span class="s15"><b>o</b></span><span class="s13"><b>g</b></span><span class="s16"><b>l</b></span><span class="s14"><b>e</b></span><span class="s1"><b> </b></span><span class="s13"><b>C</b></span><span class="s14"><b>h</b></span><span class="s15"><b>r</b></span><span class="s13"><b>o</b></span><span class="s16"><b>m</b></span><span class="s14"><b>e</b></span><span class="s1">;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Acessa <a href="https://support.mozilla.org/pt-BR/kb/limpe-cookies-e-dados-de-sites-no-firefox"><span class="s12"><b>esse link</b></span></a> para ver como limpar os dados de navegação do </span><span class="s11"><b>Mozilla</b></span><span class="s1"> </span><span class="s13"><b>Fire</b></span><span class="s17"><b>fox</b></span><span class="s1">;</span></li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><span class="s8"></span><span class="s1">Acessa <a href="https://support.microsoft.com/pt-br/microsoft-edge/exibir-e-excluir-o-hist%C3%B3rico-do-navegador-no-microsoft-edge-00cf7943-a9e1-975a-a33d-ac10ce454ca4"><span class="s12"><b>esse link</b></span></a> para ver como limpar os dados de navegação do <b>Microsoft</b></span><span class="s14"><b> </b></span><span class="s13"><b>Edge</b></span><span class="s1">.</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<ol class="ol1">
+  <li class="li1"><span class="s8"></span><span class="s1">Aqui tem outros procedimentos que pode fazer caso tenha dificuldades com o uso do microfone e/ou da câmera.</span></li>
+</ol>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Se seu computador tem o sistema operacional Windows, dá uma olhada nesses procedimentos:</span></p>
+<ul class="ul2">
+  <li class="li9"><span class="s21"></span><span class="s32">🎤</span><span class="s1"><b>Microfone</b></span></li>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b></b></span><span class="s1"><b>Microfone mudo</b><br>
+Acesse o painel de controle de som: <b>Botão direito no símbolo de som do computador &gt; Abrir configurações de Som &gt; Painel de controle de som &gt; Gravação &gt; Níveis</b><br>
+<a href="file:///Users/harsh/Downloads/welcome-kit/microfone_mudo.gif"><img src="file:///microfone_mudo.gif" alt="microfone_mudo.gif"></a></span></li>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<br>
+</span></li>
+  </ul>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b></b></span><span class="s1"><b>Microfone chiando</b><br>
+Pra verificar os problemas de chiado de microfone, primeiramente é necessário verificar os dispositivos que aparecem na aba de gravação do painel de controle de som.<br>
+A troca de dispositivos pode ser feita para encontrar o microfone com problema:<br>
+<a href="https://harshpoddar.github.io/welcome-kit/microfone_chiando.gif"><img src="file:///microfone_chiando.gif" alt="microfone_chiando.gif"></a><br>
+<br>
+</span></li>
+  </ul>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b></b></span><span class="s1"><b>Microfone externo</b><br>
+Os microfones externos são identificados como “Headphones” ou “Headsets” nas configurações de som, desta forma, basta identificar se o headset esta selecionado corretamente em <b>Gravação e Reprodução</b>:<br>
+Alterar o dispositivo de “<b>Comunicação padrão</b>” para “<b>Dispositivo padrão</b>”<b>.</b><br>
+<a href="https://harshpoddar.github.io/welcome-kit/microfone_headset.gif"><img src="file:///microfone_headset.gif" alt="microfone_headset.gif"></a></span></li>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<br>
+</span></li>
+  </ul>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b></b></span><span class="s1"><b>Como Verificar se o microfone está funcionando corretamente?</b><br>
+Para verificar se o microfone esta respondendo, pode ser feito o teste através da opção “Escutar” nas propriedades do microfone.<br>
+Se o dispositivo estiver funcionando corretamente o usuário irá se escutar. Em caso de falha o usuário irá ouvir um barulho alto e irritante.<br>
+<br>
+</span></li>
+  </ul>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b></b></span><span class="s1"><b>Configurações do Navegador</b><br>
+Existem algumas configurações necessárias para que o navegador funcione corretamente, são elas:</span></li>
+    <ul class="ul2">
+      <li class="li1"><span class="s8"><b></b></span><span class="s1"><b>Permissões</b></span></li>
+      <ul class="ul3">
+        <li class="li1"><span class="s8"></span><span class="s1">As permissões de câmera e microfone devem estar ativas.<a href="https://harshpoddar.github.io/welcome-kit/Untitled.png"><img src="file:///Untitled.png" alt="Untitled.png"></a><br>
+</span></li>
+      </ul>
+      <ul class="ul3">
+        <li class="li1"><span class="s8"></span><span class="s1">As permissões para o site devem estar sempre permitidas.<a href="https://harshpoddar.github.io/welcome-kit/Untitled%201.png"><img src="file:///Untitled%201.png" alt="Untitled 1.png"></a><br>
+</span></li>
+      </ul>
+      <li class="li20"><span class="s9"><br>
+</span></li>
+    </ul>
+    <ul class="ul2">
+      <li class="li1"><span class="s8"><b></b></span><span class="s1"><b>Liberação de cookies</b><br>
+Verificar se a opção “Mostrar todos os cookies” está ativa.<br>
+<a href="https://harshpoddar.github.io/welcome-kit/cookies.gif"><img src="file:///cookies.gif" alt="cookies.gif"></a></span></li>
+      <li class="li5"><span class="s8"></span><span class="s1"><br>
+<br>
+</span></li>
+    </ul>
+    <ul class="ul2">
+      <li class="li1"><span class="s8"><b></b></span><span class="s1"><b>Tradutor do Google desativado</b><br>
+Em todos os navegadores a opção “Nunca traduzir este site” deve ser selecionada.<br>
+Caso o tradutor não apareça na barra de endereços, Clique com o botão direito do mouse na tela &gt; Selecione Traduzir para Português, assim ele irá aparecer.<br>
+<br>
+</span></li>
+    </ul>
+    <li class="li20"><span class="s9"><br>
+</span></li>
+  </ul>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b></b></span><span class="s1"><b>Hardware (Microfone e câmera)</b><br>
+Para verificar problemas de Hardware basta acessar o <b>Gerenciador de Dispositivos</b><br>
+Os motivos pelos quais serão necessário utilizar esta ferramenta são:</span></li>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"></span><span class="s1">Câmera não encontrada</span></li>
+    </ul>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"></span><span class="s1">Nenhum microfone encontrado no Painel de controle de som<a href="https://harshpoddar.github.io/welcome-kit/image_(13).png"><img src="file:///image_(13).png" alt="image_(13).png"></a><br>
+</span></li>
+    </ul>
+    <li class="li20"><span class="s9"><br>
+</span></li>
+  </ul>
+  <li class="li20"><span class="s9"><br>
+</span></li>
+</ul>
+<ul class="ul2">
+  <li class="li9"><span class="s21"></span><span class="s32">📷</span><span class="s18"> </span><span class="s1"><b>Câmera</b></span></li>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b><i></i></b></span><span class="s1"><b><i>Passo 1</i></b></span></li>
+    <ul class="ul2">
+      <li class="li1"><span class="s8"></span><span class="s1">App de câmera do Windows</span></li>
+      <ol class="ol1">
+        <li class="li1"><span class="s8"></span><span class="s1">Procure pelo aplicativo da <b>Câmera</b>;<span class="Apple-converted-space"> </span></span></li>
+      </ol>
+      <ol class="ol1">
+        <li class="li1"><span class="s8"></span><span class="s1">Abra o aplicativo e verifique se consegue ver a si mesmo.</span></li>
+      </ol>
+      <li class="li21"><a href="https://harshpoddar.github.io/welcome-kit/7.png"><span class="s9"><img src="file:///7.png" alt="7.png"></span></a></li>
+      <li class="li5"><span class="s8"></span><span class="s1"><br>
+<br>
+</span></li>
+    </ul>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"></span><span class="s1">Se a câmera é integrada ou USB</span></li>
+    </ul>
+    <li class="li22"><span class="s33"></span><span class="s34">🚨</span><span class="s35"><br>
+</span><span class="s5">Aplicativos de câmera virtual podem causar problemas durante a aula, já a câmera de celular é<i> </i>incompatível.</span><span class="s1"><br>
+<br>
+</span></li>
+  </ul>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b><i></i></b></span><span class="s1"><b><i>Passo 2</i></b> - <b>Câmera não encontrada</b><br>
+Se esta mensagem aparecer no app de câmera, verifique no <b><i>“Gerenciador de dispositivos”</i></b> pelo driver de câmera.<br>
+Caso o driver não esteja presente:</span></li>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"></span><span class="s1">Pergunte ao cliente existe algum botão no teclado com uma imagem de câmera , cadeado ou uma pessoa dentro de um quadradinho.<span class="Apple-converted-space"> </span></span></li>
+    </ul>
+    <li class="li21"><a href="https://harshpoddar.github.io/welcome-kit/WinCam.gif"><span class="s9"><img src="file:///WinCam.gif" alt="WinCam.gif"></span></a></li>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<br>
+</span></li>
+  </ul>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b><i></i></b></span><span class="s1"><b><i>Passo 3 </i></b>- <b>Simbologia de botões do teclado para bloqueio de câmera</b><br>
+Existem alguns botões de teclado diferentes para bloqueio de privacidade, são eles:</span></li>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"><b><i></i></b></span><span class="s1"><b><i>Botão com desenho de câmera e botão de cadeado com pessoa dentro do quadradinho;</i></b></span></li>
+    </ul>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<a href="https://harshpoddar.github.io/welcome-kit/Untitled%202.png"><img src="file:///Untitled%202.png" alt="Untitled 2.png"></a></span></li>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<br>
+</span></li>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"><b><i></i></b></span><span class="s1"><b><i>Tampa de segurança</i></b></span></li>
+    </ul>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<a href="https://harshpoddar.github.io/welcome-kit/Untitled%203.png"><img src="file:///Untitled%203.png" alt="Untitled 3.png"></a></span></li>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<br>
+</span></li>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"><b><i></i></b></span><span class="s1"><b><i>Trava de segurança</i></b></span></li>
+    </ul>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<a href="https://harshpoddar.github.io/welcome-kit/Untitled%204.png"><img src="file:///Untitled%204.png" alt="Untitled 4.png"></a><br>
+<br>
+</span></li>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<br>
+</span></li>
+  </ul>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b><i></i></b></span><span class="s1"><b><i>Passo 4</i></b> - <b>Driver de câmera desativado pelo sistema (erro de inicialização)</b></span></li>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"></span><span class="s1">Para solucionar este problema, basta <b><i>reiniciar </i></b>o computador</span></li>
+    </ul>
+    <li class="li23"><span class="s8"><a href="https://harshpoddar.github.io/welcome-kit/image_(13)%201.png"><span class="s1"><img src="file:///image_(13)%201.png" alt="image_(13) 1.png"></span></a></span><span class="s1"><br>
+<br>
+</span></li>
+  </ul>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b><i></i></b></span><span class="s1"><b><i>Passo 6</i></b> - <b>Reset App</b> <b>de câmera do Windows</b></span></li>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"></span><span class="s1">O app de câmera do windows possui uma ferramenta para reparar problemas na câmera esta opção tem a capacidade de resetar o app e restaurar o sistema.</span></li>
+    </ul>
+    <li class="li23"><span class="s8"><a href="https://harshpoddar.github.io/welcome-kit/reset_camera.gif"><span class="s1"><img src="file:///reset_camera.gif" alt="reset_camera.gif"></span></a></span><span class="s1"><br>
+<br>
+</span></li>
+  </ul>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b><i></i></b></span><span class="s1"><b><i>Passo 7</i></b> - <b>Configurações de Privacidade</b><br>
+As configurações de privacidade devem ser verificadas em casos onde:</span></li>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"></span><span class="s1">A câmera abre no app de Câmera do windows porém não abre em nenhum website.</span></li>
+    </ul>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"></span><span class="s1">O microfone funciona em testes porém não funcionam em nenhum website.</span></li>
+    </ul>
+    <ul class="ul3">
+      <li class="li1"><span class="s8"></span><span class="s1">Mensagens sugeridas pelo windows dizendo que a câmera ou microfone não podem ser utilizados devido a configurações de privacidade.</span></li>
+    </ul>
+    <li class="li21"><a href="https://harshpoddar.github.io/welcome-kit/PrivCamera.gif"><span class="s9"><img src="file:///PrivCamera.gif" alt="PrivCamera.gif"></span></a></li>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<br>
+</span></li>
+  </ul>
+  <li class="li20"><span class="s9"><br>
+</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Se seu computador tem o sistema operacional MacOS, dá uma olhada nesses procedimentos:</span></p>
+<ul class="ul2">
+  <li class="li1"><span class="s8"></span><span class="s3">🎦🎙️</span><span class="s17"><b>Câmera &amp; Microfone</b></span><span class="s1"><br>
+</span><span class="s36">💡</span><span class="s35"><br>
+</span><span class="s37"><i>Macbook possui um sistema automatizado com as definições de dispositivos sendo selecionadas automaticamente pelo sistema. Não é possível fazer alterações no driver, desta forma os dispositivos devem ser inicializados ao ligar o computador. Em caso de falha de dispositivos, reinicie o computador.</i></span></li>
+  <ul class="ul2">
+    <li class="li1"><span class="s8"><b></b></span><span class="s1"><b>Microfone e Câmera Mac</b><br>
+Em casos de falha de inicialização de câmera e microfone do Macbook, o computador deve ser reiniciado para que inicie os dispositivos automaticamente. <br>
+Caso necessite de permissão para acesso a Câmera e Microfone nos navegadores:<span class="Apple-converted-space"> </span></span></li>
+    <li class="li5"><span class="s8"></span><span class="s1"><br>
+<b><i>Passo</i></b><i> </i><b><i>1</i> - Clicar no Ícone da “Apple”</b><br>
+<b><i>Passo 2</i> - Entrar nas “Preferências do Sistema”</b><br>
+<b><i>Passo 3 </i>- Procurar as opções de “Segurança e Privacidade”</b><br>
+<b><i>Passo 4 </i>- Procure por "Privacidade"</b><br>
+<b><i>Passo 5 </i>- Ao Lado esquerdo, selecione a opção “Câmera” e marque o navegador que deseja autorizar o acesso por exemplo ( Google Chrome, Firefox ). Faça isso também no Microfone. </b><br>
+<b><i>Passo 6 </i>- Logo feche o navegador e abre novamente para as ações terem efeito.</b><br>
+</span><span class="s36">💡</span><span class="s35"><br>
+</span><span class="s37"><b>OBS. Caso esteja esbranquiçado para selecionar, clique no cadeado amarelo fechado que está na parte inferior da janela e coloque as credenciais do Mac (Nome e senha administrador) assim que o cadeado for aberto, você conseguirá solicitar o acesso. </b></span><span class="s1"><br>
+<a href="https://harshpoddar.github.io/welcome-kit/Untitled%205.png"><img src="file:///Untitled%205.png" alt="Untitled 5.png"></a><br>
+<a href="https://harshpoddar.github.io/welcome-kit/Gravacao_de_Tela_2022-05-19_as_13.55.52.mov"><span class="s6">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/39c7ff8b-f59a-41bf-915e-aac80ea4eb98/Gravacao_de_Tela_2022-05-19_as_13.55.52.mov</span></a><br>
+<br>
+<br>
+</span></li>
+  </ul>
+  <li class="li20"><span class="s9"><br>
+</span></li>
+</ul>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">Ufa! Vimos bastante coisa até aqui, né? Mas se ainda tiver alguma dúvida, é só entrar em contato com nossos analistas que estão sempre dispostos a, e a postos para, ajudá-los!</span></p>
+<p class="p5"><span class="s1">Para relembrar como nos contatar, é só verificar a seção <a href="https://www.notion.so/Ganhei-um-Gift-Card-para-fazer-as-aulas-do-Mini-G-nios-78836ed7e4444012ad45fee2ba5d4df4"><span class="s12"><b>Seu Conselheiro Acadêmico</b></span></a>. </span><span class="s3">😉</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.6px; font: 18.0px '.SF NS'; color: #2a2823; -webkit-text-stroke: #2a2823"><span class="s34">🚀</span><span class="s5"><b><span class="Apple-converted-space">  </span>Esperamos que sua jornada conosco seja brilhante e recheada de sucesso! </b></span><span class="s34">🥳</span></h2>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p18"><span class="s6"><a href="https://www.notion.so/Prepare-se-para-o-in-cio-da-aventura-c563c0e6140d448c975d1f71e99a0a30"><b>Voltar para o menu anterior</b></a></span><span class="s18"> </span><span class="s38">↩</span></p>
+<p class="p25"><span class="s1"></span><br></p>
+<p class="p25"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span> <span class="Apple-converted-space">   </span></span></p>
+<p class="p25"><span class="s1"></span><br></p>
+</body>
+</html>
