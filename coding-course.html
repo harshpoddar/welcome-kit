@@ -1,10 +1,10 @@
 <html>
 <head>
 <title>NOVIDADE PARA VOC&Ecirc;</title>
-          <meta property="og:title" content="NOVIDADE PARA VOCÊ"/>
+          <meta property="og:title" content="NOVIDADE PARA VOCï¿½"/>
             <meta property="og:image" content=""/>
-              <meta property="og:site_name" content="NOVIDADE PARA VOCÊ"/>
-                <meta property="og:description" content="NOVIDADE PARA VOCÊ"/>
+              <meta property="og:site_name" content="NOVIDADE PARA VOCï¿½"/>
+                <meta property="og:description" content="NOVIDADE PARA VOCï¿½"/>
                 	<meta name="resource-type" content="document" />
   	 <meta http-equiv="pragma" content="no-cache" />
 	  <meta http-equiv="cache-control" content="cache" />
@@ -49,10 +49,32 @@
 	<a href="https://youtu.be/5A-Rdij8r8k" target="_blank">
 		<img class="image" src="https://cdn.discordapp.com/attachments/1034159337070931971/1118543808901169212/email-mkt-inspira-3D_01.png" width="750" height="1214" alt=""></a>
 	<img class="image" src="https://cdn.discordapp.com/attachments/1034159337070931971/1118543827788124160/email-mkt-inspira-3D_02.png" width="750" height="845" alt="">
-	<a href="https://code.byjusfutureschool.com/buy?id=5104&dsp=especial&utm=b2b2c&coupon=PRESENTE-INSPIRA" target="_blank">
+	<a class='gift-card' href="https://code.byjusfutureschool.com/buy?id=5104&dsp=especial&utm=b2b2c&coupon=PRESENTE-INSPIRA" target="_blank">
 		<img class="image" src="https://cdn.discordapp.com/attachments/1034159337070931971/1118543844460462100/email-mkt-inspira-3D_03.png" width="750" height="607" alt=""></a>
 	<img class="image" src="https://cdn.discordapp.com/attachments/1034159337070931971/1118543860335911014/email-mkt-inspira-3D_04.png" width="750" height="407" alt="">
 </div>
+<script>
+
+// Get the coupon_code from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const couponCodeParam = urlParams.get('coupon_code');
+
+// Check if coupon_code starts with "inspira"
+if (couponCodeParam && couponCodeParam.startsWith('inspira')) {
+  const couponCode = couponCodeParam;
+
+  // Find all <a> tags with class "gift-card"
+  const giftCardLinks = document.querySelectorAll('a.gift-card');
+
+  // Replace the href attribute value with the coupon code
+  giftCardLinks.forEach((link) => {
+    const href = link.getAttribute('href');
+    const updatedHref = href.replace('PRESENTE-INSPIRA', couponCode);
+    link.setAttribute('href', updatedHref);
+  });
+}
+
+</script>
 
 </body>
 </html>
